@@ -6,7 +6,13 @@ import (
 
 
 func main() {
-	for x :=0; x < 10; x++ {
+	x := 10
+	
+	for {
+		if x >= 20 {
+			break
+		}
 		fmt.Println(x)
+		x++
 	}
 }
